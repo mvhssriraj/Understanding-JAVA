@@ -1,6 +1,7 @@
 import java.lang.*;
 import java.io.*;
 import java.util.*;
+import java.lang.Math;
 public class Bank
 {
     Bank()
@@ -14,7 +15,7 @@ public class Bank
 
     Bank(int i)
     {
-        acc_no = i;
+        acc_no = Math.abs(i);
     }
 
     Bank(int i,String t)
@@ -40,6 +41,7 @@ public class Bank
         Bank b1 = new Bank(1207);
         Bank b2 = new Bank(1207,"Narayan");
         Bank b3 = new Bank(1207,"Narayan","Savings");
+        Bank b4 = new Bank(-99,"@@@");
         b1.display();
         b2.display();
         b3.display();

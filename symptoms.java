@@ -19,18 +19,33 @@ public class symptoms {
     {
         if(Symptom1.equals("fever")&&Symptom2.equals("headache"))
         {
-            System.out.println("Dolo 650 for 3 days (1-1-1)");
+            take_dolo()
+//             System.out.println("Dolo 650 for 3 days (1-1-1)");
         }
         else if(Symptom1.equals("cold")&&Symptom2.equals("cough"))
         {
-            System.out.println("Cofdrop Z Syrup 5ml 3 times a day");
+            take_cofdrop()
+//             System.out.println("Cofdrop Z Syrup 5ml 3 times a day");
         }
         else
         {
-            System.out.println("Please visit your Doctor at City hOSpital of "+place);
+            go_out()
+//             System.out.println("Please visit your Doctor at City hOSpital of "+place);
         }
     }
-
+    public void take_dolo()
+    {
+        System.out.println("Dolo 650 for 3 days (1-1-1)");
+    }
+    public void take_cofdrop()
+    {
+        System.out.println("Cofdrop Z Syrup 5ml 3 times a day");
+    }
+    public void go_out()
+    {
+        System.out.println("Please visit your Doctor at City hOSpital of "+place);
+    }
+        
     public static void main(String[] args)
     {
         symptoms ob[] = new symptoms[20];

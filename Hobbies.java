@@ -25,23 +25,31 @@ public class Hobbies
     {
         if(reading_book.equals("yes") && sport.equals("yes"))
         {
-            System.out.println(" "+name);
+//             System.out.println(" "+name);
+            print_name(name);
         }
     }
     void chk2()
     {
         if(reading_book.equals("yes") && watching_mve.equals("yes"))
         {
-            System.out.println(" "+name);
+//             System.out.println(" "+name);
+            print_name(name);
         }
     }
     void chk3()
     {
         if(reading_book.equals("no") && watching_mve.equals("yes") && sport.equals("no") && dancing.equals("no"))
         {
-            System.out.println(" "+name);
+//             System.out.println(" "+name);
+            print_name(name);
         }
     }
+    void print_name(name)
+    {
+        System.out.println(" "+name);
+    }
+    
     public static void main(String[] args)
     {
         Hobbies ob[] = new Hobbies[20];
